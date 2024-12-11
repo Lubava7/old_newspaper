@@ -1,0 +1,127 @@
+.main {
+  /* font-family: 'Playfair Display', Arial, Helvetica, 'Nimbus Sans L', sans-serif; для черного текста */
+
+  /* черный жирный текст  */
+  /* color: #212121 */
+  /* h1 */
+  /* font-family: 'Playfair Display', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: none;
+    text-decoration: none; */
+}
+
+/* font-family: 'IBM Plex Serif', Arial, Helvetica, 'Nimbus Sans L', sans-serif; для серого текста */
+
+img {
+  width: 200px;
+}
+
+content {
+  display: grid;
+  grid-gap: 10px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, auto);
+}
+
+.top_ads {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 165px;
+  grid-column: 1 / 7;
+  grid-row: 1;
+}
+
+.top_ads img {
+  width: 32%;
+  height: 100%;
+}
+
+.left {
+  grid-column: 1 / 5;
+  grid-row: 2 / 4;
+}
+
+.right {
+  grid-column: 5 / 7;
+  grid-row: 2 / 5;
+}
+
+.right img {
+  width: 100%;
+}
+
+figure {
+  /* GRID here */
+  /* width: 603px; */
+
+  color: #221e1b;
+  font-style: normal;
+  font-weight: light;
+  font-size: 13px;
+  font-family: 'IBM Plex Serif', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+}
+
+figure img {
+  width: 100%;
+}
+.left_header h1 {
+  font-size: 75px;
+  font-weight: 100;
+  margin: 0 0 20px 0;
+}
+.left_header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.left_header div div {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background-color: #cf2c3e;
+
+  margin-right: 10px;
+}
+
+.left_header div p {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 100;
+  color: #1e1e1c;
+  margin: 0;
+}
+
+.left_p {
+  border-top: 2px solid #1e1e1b;
+  border-bottom: 4px solid #cf2c3e;
+  padding-top: 30px;
+
+  column-count: 3;
+  column-gap: 10px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  line-height: 17px;
+}
+
+.left_p p:nth-child(1) {
+  font-weight: 700;
+  font-family: 'Playfair Display', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+
+  margin: 0 0 0 25px;
+}
+
+.left_p p:nth-child(2) span {
+  font-size: 60px;
+  color: #cf2c3e;
+}
