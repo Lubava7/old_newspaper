@@ -1,17 +1,27 @@
 html,
 body {
   margin: 0;
-  padding: 20px;
-  /* width: 100%;
-  height: 100%; */
+  /* padding: 50px; */
+  padding: 0;
   overflow-x: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+body {
+  width: 70%;
+}
+
 header {
   border-bottom: 1px solid #1e1e1b;
+  margin-bottom: 15px;
 }
 
 .header_top_ad {
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .header_title {
@@ -21,9 +31,33 @@ header {
   align-items: center;
 }
 
-.header_title p:nth-child(1) {
-  font-size: 27px;
+.header_title div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
+.page_arrows {
+  color: #ffffff;
+  font-size: 5px;
+  text-align: center;
+  width: 12px;
+  height: 12px;
+  background-color: #cf2c3e;
+  border-radius: 50%;
+  margin: 3px 2px 0 0;
+}
+
+.header_title p {
+  margin: 0;
+  padding: 0;
+
+  font-size: min(2.3vw, 27px);
+}
+
+.header_title p:nth-child(1) {
   font-weight: 900;
   font-family: 'IBM Plex Serif', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
   margin: 0;
@@ -39,7 +73,9 @@ header {
 }
 
 .header_pics img {
-  width: 15%;
+  width: 10%;
+
+  text-align: start;
 }
 
 .header_pics img:nth-child(2) {
@@ -50,20 +86,23 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-end;
+
+  padding: 0 30px;
 }
 
 .header_text p {
   text-align: center;
+  margin-top: 0;
 }
+
 .header_text p:nth-child(1) {
   text-align: start;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+.header_text p:nth-child(2) {
+  font-family: Arial, Futura, sans-serif;
+  letter-spacing: 5px;
 }
 
 img {
@@ -107,9 +146,12 @@ content {
 }
 
 figure {
+  margin: 0;
+  padding: 0;
+
   color: #221e1b;
   font-style: normal;
-  font-weight: light;
+  font-weight: lighter;
   font-size: 0.8125rem; /* 13px */
   font-family: 'IBM Plex Serif', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
 }
@@ -171,4 +213,9 @@ figure img {
 .left_p p:nth-child(2) span {
   font-size: 3.75rem; /* 60px */
   color: #cf2c3e;
+}
+
+.page_number {
+  font-weight: 900;
+  font-family: 'Playfair Display', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
 }
