@@ -1,8 +1,8 @@
 html,
 body {
   margin: 0;
-  /* padding: 50px; */
-  padding: 0;
+  padding: 50px;
+  /* padding: 0; */
   overflow-x: hidden;
 
   display: flex;
@@ -11,7 +11,8 @@ body {
 }
 
 body {
-  width: 70%;
+  /* width: 70%; */
+  width: 60%;
 }
 
 header {
@@ -111,7 +112,8 @@ img {
 
 content {
   display: grid;
-  grid-gap: 0.625rem;
+  grid-column-gap: 55px;
+  grid-row-gap: 15px;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5, auto);
 }
@@ -133,7 +135,7 @@ content {
 
 .left {
   grid-column: 1 / 5;
-  grid-row: 2 / 5;
+  grid-row: 2 / 3;
 }
 
 .right {
@@ -145,7 +147,23 @@ content {
   width: 100%;
 }
 
-figure {
+.right figure {
+  margin: 0 0 15px 0;
+  padding: 0;
+
+  font-style: italic;
+  text-align: end;
+}
+
+.right figure img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.right figure figcaption span {
+  font-weight: bold;
+}
+
+.left figure {
   margin: 0;
   padding: 0;
 
@@ -156,7 +174,7 @@ figure {
   font-family: 'IBM Plex Serif', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
 }
 
-figure img {
+.left figure img {
   width: 100%;
 }
 
@@ -194,13 +212,18 @@ figure img {
   border-top: 1px solid #1e1e1b;
   border-bottom: 5px solid #cf2c3e;
   padding-top: 30px;
+  padding-bottom: 15px;
 
   column-count: 3;
-  column-gap: 0.625rem; /* 10px */
-  word-break: break-word;
+  column-gap: 15px;
+  word-break: break-all;
   overflow-wrap: break-word;
   hyphens: auto;
-  line-height: 1.0625rem; /* 17px */
+  line-height: 20px;
+}
+.left_p p {
+  padding: 0;
+  margin: 0;
 }
 
 .left_p p:nth-child(1) {
@@ -218,4 +241,29 @@ figure img {
 .page_number {
   font-weight: 900;
   font-family: 'Playfair Display', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+}
+
+.social_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 1 / 5;
+}
+
+.social_links div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.social_links div img {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.social_links div a {
+  text-decoration: none;
+  color: #000000;
 }
