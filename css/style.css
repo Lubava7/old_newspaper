@@ -1,8 +1,7 @@
 html,
 body {
   margin: 0;
-  padding: 50px;
-  /* padding: 0; */
+  /* padding: 50px; */
   overflow-x: hidden;
 
   display: flex;
@@ -11,9 +10,21 @@ body {
 }
 
 body {
-  /* width: 70%; */
-  width: 60%;
+  /* width: 60%; временно!!потом вернуть */
+  width: 99%;
 }
+
+/* @media (max-width: 425px) {
+  html,
+  body {
+    padding: 0;
+  }
+
+  body {
+    width: 99%;
+    padding: 0;
+  }
+} */
 
 header {
   border-bottom: 1px solid #1e1e1b;
