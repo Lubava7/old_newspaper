@@ -6,23 +6,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  zoom: normal;
 }
 
 body {
   width: 99%;
 }
 
-@media (max-width: 599px) {
+@media screen and (max-width: 600px) {
   .scale_wrapper {
-    margin: 1%;
+    margin: 1% !important;
     zoom: 30%;
   }
 }
 
-@media (min-width: 600px) {
-  .scale_wrapper {
-    margin: 1% 15%;
-  }
+.scale_wrapper {
+  margin: 1% 15%;
 }
 
 header {
