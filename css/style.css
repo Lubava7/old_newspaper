@@ -13,7 +13,7 @@ body {
   width: 99%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .scale_wrapper {
     margin: 1% !important;
     zoom: 30%;
@@ -168,6 +168,7 @@ content {
 .right_text {
   margin: 0;
   padding: 0;
+  font-size: 1rem;
 }
 
 .left figure {
