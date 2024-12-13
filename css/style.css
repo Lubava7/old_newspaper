@@ -51,17 +51,6 @@ header {
   text-align: center;
 }
 
-.page_arrows {
-  color: #ffffff;
-  font-size: 5px;
-  text-align: center;
-  width: 12px;
-  height: 12px;
-  background-color: #cf2c3e;
-  border-radius: 50%;
-  margin: 3px 2px 0 0;
-}
-
 .header_title p {
   margin: 0;
   padding: 0;
@@ -71,7 +60,7 @@ header {
 
 .header_title p:nth-child(1) {
   font-weight: 900;
-  font-family: 'IBM Plex Serif', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+  font-family: Verdana, Futura, sans-serif;
   margin: 0;
 }
 
@@ -173,6 +162,15 @@ content {
 .right figure figcaption span {
   font-weight: bold;
 }
+.right h2 {
+  color: #b2b2b2;
+  margin-bottom: 0;
+  padding: 0;
+}
+.right_text {
+  margin: 0;
+  padding: 0;
+}
 
 .left figure {
   margin: 0;
@@ -195,14 +193,16 @@ content {
   margin: 0 0 20px 0;
 }
 
-.left_header div {
+.article_header {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+
+  border-bottom: 1px solid #1e1e1b;
 }
 
-.left_header div div {
+.red_circle {
   width: 19px;
   height: 19px;
   border-radius: 50%;
@@ -211,16 +211,17 @@ content {
   margin-right: 10px;
 }
 
-.left_header div p {
+.article_header_text {
   text-transform: uppercase;
   font-size: 1.25rem; /* 20px */
-  font-weight: 100;
   color: #1e1e1c;
+  font-weight: lighter;
+  font-family: 'Courier New', sans-serif;
   margin: 0;
 }
 
 .left_p {
-  border-top: 1px solid #1e1e1b;
+  /* border-top: 1px solid #1e1e1b; */
   border-bottom: 5px solid #cf2c3e;
   padding-top: 30px;
   padding-bottom: 15px;
@@ -241,7 +242,7 @@ content {
   font-weight: 700;
   font-family: 'Playfair Display', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
 
-  margin: 0 0 0 25px;
+  margin: 0 0 20px 25px;
 }
 
 .left_p p:nth-child(2) span {
@@ -249,9 +250,43 @@ content {
   color: #cf2c3e;
 }
 
+.page {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.pagae .page_number {
+  font-weight: 900;
+  font-family: 'Playfair Display', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+}
+
+.page .page_arrows {
+  color: #ffffff;
+  font-size: 6px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  background-color: #cf2c3e;
+  border-radius: 50%;
+  margin: 3px 2px 0 0;
+}
+
 .page_number {
   font-weight: 900;
   font-family: 'Playfair Display', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+}
+
+.page_arrows {
+  color: #ffffff;
+  font-size: 5px;
+  text-align: center;
+  width: 12px;
+  height: 12px;
+  background-color: #cf2c3e;
+  border-radius: 50%;
+  margin: 3px 2px 0 0;
 }
 
 .social_links {
@@ -277,4 +312,17 @@ content {
 .social_links div a {
   text-decoration: none;
   color: #000000;
+}
+
+.currency_info {
+  margin: 20px 0 0 0;
+}
+
+.currency_info span {
+  font-size: 20px;
+  color: #008aaa;
+}
+
+.bottom_ad {
+  margin-bottom: 15px;
 }

@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <meta name="viewport" content="width=1500, initial-scale=1">
     <link href="./css/style.css" rel="stylesheet" />
     <script src="./js/script.js" defer></script>
@@ -23,7 +22,7 @@
           <img src="./images/emblem_right.jpg" alt="герб правый" />
         </div>
         <div class="header_text">
-          <p>Четверг</br> № 46 (13626)</br> 16 ноября 2023 г.</p>
+          <p id="date_time"></br> № 46 (13626)</br></p>
           <p>
             ИНФОРМАЦИОННАЯ ГАЗЕТА</br> АЛЕКСЕЕВСКОГО ГОРОДСКОГО ОКРУГА И КРАСНЕНСКОГО
             РАЙОНА БЕЛГОРОДСКОЙ ОБЛАСТИ</br> Издаётся с апреля 1920 года
@@ -51,14 +50,14 @@
             </figcaption>
           </figure>
           <div class="left_text">
-            <div class="article left_header">
+            <div class="left_header">
               <h1>Импульс добра</h1>
-              <div>
-                <div></div>
-                <p>с места события</p>
+              <div class="article_header">
+                <div class="red_circle"></div>
+                <p class="article_header_text">с места события</p>
               </div>
             </div>
-            <div class="article left_p">
+            <div class="left_p">
               <p>
                 В Алексеевском городском округе открылся Центр общественного
                 развития, поддержки добровольческих, благотворительных и
@@ -110,6 +109,7 @@
                 учащимися изготавливают окопные свечи, сухойдушдлянаших
                 военнослужащих.
               </p>
+              <div class="page"><div class="page_arrows">&#9654;&#9654;</div> стр. <span class="page_number">Ӡ</span></div>
             </div>
           </div>
         </div>
@@ -137,9 +137,13 @@
           <!-- правая часть страницы -->
         <div class="main right">
           <div>
+            <div class="article_header">
+                <div class="red_circle"></div>
+                <p class="article_header_text">Что? Где? Когда?</p>
+              </div>
             <div>
               <h2>Новое оборудование</h2>
-              <p>
+              <p class="right_text">
                 Губернатор Белгородской области Вячеслав Гладков рассказал о
                 выделении 12,5 млн. рублей на оборудование для больных сахарным
                 диабетом. Средства направят федеральные власти. По словам главы
@@ -154,7 +158,7 @@
             </div>
             <div>
               <h2>Успешные проекты</h2>
-              <p>
+              <p class="right_text">
                 Внедрение проектной деятельности на территории Красненского
                 района даёт немало положительных эффектов. К примеру, применение
                 проектного подхода через инициативу «День культуры на селе»
@@ -166,7 +170,6 @@
                 товаропроизводителями района.
               </p>
             </div>
-            <!-- <img src="./images/secondary_pic.jpg" alt="Правая картинка" /> -->
                <figure>
             <img src="./images/secondary_pic.jpg" alt="Правая картинка" />
             <figcaption>
@@ -174,33 +177,18 @@
             </figcaption>
           </figure>
           </div>
-          <img src="./images/ad_bottom.png" alt="Главная картинка" />
+          <img class="bottom_ad" src="./images/ad_bottom.png" alt="реклама бетон" />
+              <div class="article_header">
+                <div class="red_circle"></div>
+                <p class="article_header_text">Курсы валют</p>
+              </div>
+
+              <div  class="currency_info">
+                <span>$</span> 91,25;  <span>€</span> 97,77. По данным ЦБ РФ на 15.11.23 г.
+                </div>
         </div>
         <!-- основная часть -->
-
-       
       </content>
-      <footer>
-        <!-- ссылки на соцсети -->
-        <!-- <div class="social_links">
-            <div>
-                <img src="./images/mailru.png" alt="m" />
-                <a target="_blank" href="alekseevka-zarya@yandex.ru">alekseevka-zarya@yandex.ru</a> 
-            </div>
-            <div>
-                 <img src="./images/odnoklasniki.png" alt="o" />
-                <a target="_blank" href="ok.ru/group/59095383146532">ok.ru/group/59095383146532</a> 
-            </div>
-            <div>
-                 <img src="./images/vk.jpeg" alt="vk" />
-                <a target="_blank" href="vk.com/public167450348">vk.com/public167450348</a> 
-            </div>
-            <div>
-                <img src="./images/zaray_icon.jpg" alt="z" />
-                <a target="_blank" href="gazeta-zarya31.ru">gazeta-zarya31.ru</a> 
-            </div>
-        </div> -->
-      </footer>
     </div>
   </body>
 </html>
