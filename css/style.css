@@ -13,6 +13,11 @@ body {
   width: 99%;
 }
 
+.scale_wrapper {
+  margin: 1% 15%;
+  zoom: 55%;
+}
+
 @media screen and (max-width: 499) {
   .scale_wrapper {
     margin: 1% !important;
@@ -24,7 +29,17 @@ body {
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 1024px) {
+@media screen and (min-width: 500px) {
+  .scale_wrapper {
+    margin: 1% !important;
+    zoom: 55%;
+  }
+
+  .right_text {
+    line-height: 15px;
+  }
+}
+@media screen and (max-width: 1024px) {
   .scale_wrapper {
     margin: 1% !important;
     zoom: 55%;
@@ -35,7 +50,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1100px) {
+@media screen and (min-width: 1025px) {
   .scale_wrapper {
     margin: 1% !important;
     zoom: 60%;
@@ -45,10 +60,15 @@ body {
     line-height: 15px;
   }
 }
+@media screen and (max-width: 1100px) {
+  .scale_wrapper {
+    margin: 1% !important;
+    zoom: 60%;
+  }
 
-.scale_wrapper {
-  margin: 1% 15%;
-  zoom: 55%;
+  .right_text {
+    line-height: 15px;
+  }
 }
 
 header {
