@@ -35,7 +35,7 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .scale_wrapper {
-    zoom: 55%;
+    zoom: 70%;
   }
 
   .right_text {
@@ -62,10 +62,10 @@ body {
   }
 }
 
-@media screen and (mшт-width: 1101px) {
+@media screen and (min-width: 1101px) {
   .scale_wrapper {
     margin: 1% 15%;
-    zoom: 55%;
+    zoom: normal;
   }
 }
 
