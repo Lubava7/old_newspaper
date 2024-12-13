@@ -13,15 +13,10 @@ body {
   width: 99%;
 }
 
-.scale_wrapper {
-  margin: 1% 15%;
-  zoom: 55%;
-}
-
 @media screen and (max-width: 499) {
   .scale_wrapper {
     margin: 1% !important;
-    zoom: 30%;
+    zoom: 30% !important;
   }
 
   .right_text {
@@ -31,7 +26,6 @@ body {
 
 @media screen and (min-width: 500px) {
   .scale_wrapper {
-    margin: 1% !important;
     zoom: 55%;
   }
 
@@ -41,7 +35,6 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .scale_wrapper {
-    margin: 1% !important;
     zoom: 55%;
   }
 
@@ -52,7 +45,6 @@ body {
 
 @media screen and (min-width: 1025px) {
   .scale_wrapper {
-    margin: 1% !important;
     zoom: 60%;
   }
 
@@ -62,12 +54,18 @@ body {
 }
 @media screen and (max-width: 1100px) {
   .scale_wrapper {
-    margin: 1% !important;
     zoom: 60%;
   }
 
   .right_text {
     line-height: 15px;
+  }
+}
+
+@media screen and (mшт-width: 1101px) {
+  .scale_wrapper {
+    margin: 1% 15%;
+    zoom: 55%;
   }
 }
 
